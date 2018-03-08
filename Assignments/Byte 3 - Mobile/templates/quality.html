@@ -46,27 +46,55 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p> <p>I evaluated the data based on the following metrics:</p>
+   <b>Is the data coherent?</b>
+   <ul>
+   <li>Does it make sense relative to itself?</li>
+   <li>Does it match your expectations?</li>
+   <li>Is the data is distributed across its possible values in a way that makes sense?</li>
+   </ul>
+
+<b>Is your data correct?</b>
+<ul><li>Is there a source of bias?</li>
+<li>Are there measurement errors?</li>
+<li>Are errors random or do they introduce you to bias?</li>
+<li>Are errors more likely in some variables than others?</li>
+<li>Is there a specific type of error you expect?</li></ul>
+
+<b>Is the data accountable?</b>
+<ul><li>Do you understand the provenance of the data?</li>
+<li>Have you protected any end users or the people who could be traced?</li>
+<li>Can you back up your claims about the data?</li>
+<li>Do you have the original data as well as any modifications?</li>
+<li>Is the data complete? If not, what is missing, and what concerns does it raise?</li>
+<li>Does the data you have match the questions you want answered? Is there any missing data? Is there any reporting errors?</li></ul>
+
+<b>Is the data complete?</b>
+<ul><li>If not, what is missing, and what concerns does it raise?</li>
+<li>Does the data you have match the questions you want answered?</li>
+<li>Is there any missing data? Is there any reporting errors?</li></ul>
+</a>
+<p>Short Summary: There are a number of issues with the correctness of the data. Since I am the sole owner of the data, the data is accountable. The dataset has many gaps and is not complete.</p>
+</p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The dataset is not complete. There are large spans of data that are missing. For example, in the second visualization, there are wide gaps in the activity data that don't have datapoints placing me into the supposedly exhaustive list of categories. These gaps are not accounted for. In the location data, the samples were taken at sporadic intervals, and there is no continuous trail that leads me from one place to another.</p>
+	<p>Overall, the data is spotty at high resolution. I have attempted to account for this by sampling at a lower resolution at looking at big picture trends rather than instantaneous changes.</p>
+      <p>Lastly, there are wide swaths of data missing from when my phone was in airplane mode.</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>The data generally matches my expectations. It makes sense that all my locations are in Pittsburgh, that I spend a lot of time at home and at the Master Student Lounge in CMU. It makes sense that I made a few short trips to Shadyside and Squirrel Hill. It also makes sense that I only dropped my phone once a day, toward the evening, when I am tired and clumsy.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>There are some mistakes in the data. For example, I noticed that the acitvity recognition data for Feb 28 (not in the visualizations) had me driving at 3 AM - I was most certainly driving at that time. I was fast asleep.</p>
+	<p>The accelerometer data is also off. The two points that seem to indicate my smartphone in freefall have G values that are markedly lower than the rest of the datapoints. But the G values of these points is not zero, which would be expected in a more accurate instrument.</p>
       </div>
 
     </div> <!-- /container -->

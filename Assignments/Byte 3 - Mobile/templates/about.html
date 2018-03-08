@@ -47,18 +47,22 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Accountability: About This Data Set</h1>
-        <p>Write a brief summary about the data set here</a></p>
+	        <p>I used the AWARE framework to use my smartphone's sensors to collect data about my location, movement, and activities. I collected the following data: accelerometer, location, and activity recognition.</a></p>
       </div>
 
     
       <div class="page-header">
 	<h2>Where did this data come from?</h2>
-	<p>fill in</p>
+	<p>This dataset comes from data I collected on my phone using the AWARE framework. More info at http://www.awareframework.com/</p>
+	<p>While cleaning the location dataset, I plotted all the datapoints to make sure that they all mapped to the Pittsburgh area. I also converted the unix timestamp to human time to verify authenticity.</p>	
+     <p>While preparing the acitivity recognition dataset, I plotted all the datapoints on a time axis and visualized the data using color to make sure that all the data was correct. That's how I noticed that a few datapoints from Feb 28 were wrong - the dataset implied that I was driving at 3 AM, when in reality I was fast asleep.</p>
+     <p>For the accelerometer dataset, I queried the dataset using SQL to extract the rows for which the square root of the sum of the squares of doubles_value_0, doubles_value_1, and doubles_value_2 were equal to or close to 0 (a value of 0 implies freefall, i.e., a phone being dropped from a height).</p>
       </div>
+      
       
       <div class="page-header">
 	<h2>Who has access to it?</h2>
-	<p>fill in</p>
+	<p>The data in these visualizations is publicly accessible but owned by me. The rest of the data (I collected data over 7 days) is private.</p>
       </div>
 
 
